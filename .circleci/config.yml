@@ -42,11 +42,11 @@ jobs:
           # You can get the sfdxurl via sfdx force:org:display -u yourOrg --json --verbose from your local machine.
           command: |
               node_modules/sfdx-cli/bin/run force:auth:sfdxurl:store -f assets/sfdxurl.txt -d -a HubOrg  --setdefaultusername
-              node_modules/sfdx-cli/bin/run force:org:create -v HubOrg -s -f config/project-scratch-def.json -a scratch -d 1 --setdefaultusername
+              # node_modules/sfdx-cli/bin/run force:org:create -v HubOrg -s -f config/project-scratch-def.json -a scratch -d 1 --setdefaultusername
       - run:
             name: Install Lightning Testing Service
             command: |
-              node_modules/sfdx-cli/bin/run force:lightning:test:install -t jasmine
+              # node_modules/sfdx-cli/bin/run force:lightning:test:install -t jasmine
       - persist_to_workspace:
           # This is an important step. If we don't store the project data (cloned GitHub source and node_modules from the CLI installation)
           # we'd have to re-run installation for every workflow step.
@@ -97,7 +97,7 @@ jobs:
       - run:
           name: Clean Up
           command: |
-            node_modules/sfdx-cli/bin/run force:org:delete --noprompt --targetusername || true
+            # node_modules/sfdx-cli/bin/run force:org:delete --noprompt --targetusername || true
 workflows:
   version: 2
   build_and_test:
