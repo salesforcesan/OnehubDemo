@@ -57,7 +57,7 @@ jobs:
               - .sfdx/*
               - project/*
   deploy_source:
-  # This deploys the source to the ci scratch org.
+  # This deploys the source to the ci scratch org. test
     <<: *defaults
     steps:
       - attach_workspace:
