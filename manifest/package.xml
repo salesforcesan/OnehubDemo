@@ -1,35 +1,185 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SanPackage</fullName>
     <types>
-        <members>*</members>
+        <members>BotController</members>
+        <members>BotField</members>
+        <members>BotHandler</members>
+        <members>BotItem</members>
+        <members>BotMessage</members>
+        <members>BotMessageButton</members>
+        <members>BotRecord</members>
+        <members>BotResponse</members>
+        <members>EinsteinVisionController</members>
+        <members>HttpFormBuilder</members>
+        <members>JWT</members>
+        <members>JWTBearerFlow</members>
+        <members>LIFXController</members>
+        <members>PropertyController</members>
+        <members>PropertyListPage</members>
+        <members>SampleDataController</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexComponent</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTestSuite</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>InitPropertyDateListed</members>
+        <members>PushNotificationTrigger</members>
+        <members>RejectDuplicatePropertyFavorite</members>
         <name>ApexTrigger</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Bot</members>
+        <members>EinsteinVisionDashboard</members>
+        <members>EinsteinVisionDataset</members>
+        <members>EinsteinVisionDatasetEvent</members>
+        <members>MortgageAmortizationChart</members>
+        <members>MortgageCalcWithAmortization</members>
+        <members>MortgageCalculator</members>
+        <members>MortgageChange</members>
+        <members>PageTemplate_2_6_4</members>
+        <members>PageTemplate_2_7_3</members>
+        <members>PriceRange</members>
+        <members>PropertyCarousel</members>
+        <members>PropertyDaysOnMarketChart</members>
+        <members>PropertyFilterChange</members>
+        <members>PropertyFilters</members>
+        <members>PropertyListMap</members>
+        <members>PropertyPageChange</members>
+        <members>PropertyPaginator</members>
+        <members>PropertySummary</members>
+        <members>PropertyTile</members>
+        <members>PropertyTileList</members>
+        <members>RangeChange</members>
+        <members>RecordMap</members>
+        <members>SampleDataImporter</members>
+        <members>SimilarProperties</members>
+        <members>SmartHome</members>
+        <members>SmartLights</members>
+        <members>SmartLocks</members>
+        <members>SmartThermostat</members>
+        <members>VisualSearchBox</members>
+        <members>VisualSearchEvent</members>
+        <members>VoiceInput</members>
+        <members>VoiceInputCard</members>
+        <members>VoiceInputChangeEvent</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Broker__c.Broker_Compact</members>
+        <members>Property__c.Property_Compact_Layout</members>
+        <name>CompactLayout</name>
+    </types>
+    <types>
+        <members>dreamhouselogosquare</members>
+        <name>ContentAsset</name>
+    </types>
+    <types>
+        <members>DreamHouse</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Bot_Command__c.Active__c</members>
+        <members>Bot_Command__c.Apex_Class__c</members>
+        <members>Bot_Command__c.Pattern__c</members>
+        <members>Bot_Command__c.Sample_Utterance__c</members>
+        <members>Broker__c.Broker_Id__c</members>
+        <members>Broker__c.Email__c</members>
+        <members>Broker__c.Mobile_Phone__c</members>
+        <members>Broker__c.Phone__c</members>
+        <members>Broker__c.Picture_IMG__c</members>
+        <members>Broker__c.Picture__c</members>
+        <members>Broker__c.Title__c</members>
+        <members>Dreamhouse_Settings__c.Einstein_Vision_Email__c</members>
+        <members>Dreamhouse_Settings__c.LIFX_Token__c</members>
+        <members>Dreamhouse_Settings__c.LIFX_URL__c</members>
+        <members>Dreamhouse_Settings__c.Light_Service_URL__c</members>
+        <members>Dreamhouse_Settings__c.Push_Server_URL__c</members>
+        <members>Dreamhouse_Settings__c.Slack_Opportunity_Webhook_URL__c</members>
+        <members>Dreamhouse_Settings__c.Slack_Property_Webhook_URL__c</members>
+        <members>Property_Favorite__c.Property__c</members>
+        <members>Property_Favorite__c.User__c</members>
+        <members>Property__c.Address__c</members>
+        <members>Property__c.Asking_Price__c</members>
+        <members>Property__c.Assessed_Value__c</members>
+        <members>Property__c.Baths__c</members>
+        <members>Property__c.Beds__c</members>
+        <members>Property__c.Broker__c</members>
+        <members>Property__c.City__c</members>
+        <members>Property__c.Date_Agreement__c</members>
+        <members>Property__c.Date_Closed__c</members>
+        <members>Property__c.Date_Contracted__c</members>
+        <members>Property__c.Date_Listed__c</members>
+        <members>Property__c.Date_Pre_Market__c</members>
+        <members>Property__c.Days_On_Market__c</members>
+        <members>Property__c.Description__c</members>
+        <members>Property__c.Location__c</members>
+        <members>Property__c.Picture_IMG__c</members>
+        <members>Property__c.Picture__c</members>
+        <members>Property__c.Predicted_Days_on_Market__c</members>
+        <members>Property__c.Price_Sold__c</members>
+        <members>Property__c.Price__c</members>
+        <members>Property__c.Record_Link__c</members>
+        <members>Property__c.State__c</members>
+        <members>Property__c.Status__c</members>
+        <members>Property__c.Tags__c</members>
+        <members>Property__c.Thumbnail_IMG__c</members>
+        <members>Property__c.Thumbnail__c</members>
+        <members>Property__c.Title__c</members>
+        <members>Property__c.Zip__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Bot_Command__c</members>
+        <members>Broker__c</members>
+        <members>Dreamhouse_Settings__c</members>
+        <members>Property_Favorite__c</members>
+        <members>Property__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Bot_Command__c</members>
+        <members>Broker__c</members>
+        <members>Einstein_Vision</members>
+        <members>Property_Explorer</members>
+        <members>Property_Finder</members>
+        <members>Property__c</members>
+        <members>Sample_Data_Import</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Broker_Record_Page</members>
+        <members>Einstein_Vision</members>
+        <members>Property_Explorer</members>
+        <members>Property_Finder</members>
+        <members>Property_Record_Page</members>
+        <members>Sample_Data_Import</members>
+        <members>dreamhouseApplicationUtilityBar</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Bot_Command__c-Bot Action Layout</members>
+        <members>Broker__c-Broker Layout</members>
+        <members>Property_Favorite__c-Favorite Layout</members>
+        <members>Property__c-Property Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>helloWorld</members>
         <name>LightningComponentBundle</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Bot_Command__c.All</members>
+        <members>Broker__c.All</members>
+        <members>Property_Favorite__c.All</members>
+        <members>Property__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Property__c.Smart_Home</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>leaflet</members>
+        <members>nouislider</members>
         <name>StaticResource</name>
     </types>
     <version>48.0</version>
